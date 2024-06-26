@@ -19,7 +19,7 @@ int main()
 
 	Initialize();
 
-	while (g_exitGame)
+	while (!g_exitGame)
 	{
 		GetInput();
 		Update(0.0f);
@@ -38,7 +38,7 @@ void Initialize()
 
 void GetInput()
 {
-	// g_game
+	g_game.OnInput();
 }
 
 void Update(float deltaTime)
