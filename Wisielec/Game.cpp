@@ -25,7 +25,7 @@ void Game::OnInit()
 	LoadWordsFromFile("words.txt"); // Nazwa pliku z wyrazami
 
 	if (m_wordsPool.empty()) {
-		cerr << "Brak s³ów w pliku!" << endl;
+		cerr << "Brak slow w pliku!" << endl;
 		return;
 	}
 
@@ -38,7 +38,7 @@ void Game::OnInit()
 
 void Game::OnInput()
 {
-	cout << "Podaj literê: ";
+	cout << "Podaj litere: ";
 	cin >> m_lastGuess;
 	m_lastGuess = tolower(m_lastGuess);
 }
@@ -60,13 +60,13 @@ bool Game::OnUpdate(float deltaTime)
 	bool wordGuessed = all_of(m_guessedLetters.begin(), m_guessedLetters.end(), [](bool guessed) { return guessed; });
 
 	if (wordGuessed) {
-		cout << "Gratulacje! Odgad³eœ s³owo: " << m_word << endl;
+		cout << "Gratulacje! Odgadles slowo: " << m_word << endl;
 		m_gameState = GameState::FINISH;
 		return true;
 	}
 
 	if (m_lives <= 0) {
-		cout << "Koniec gry! Przegra³eœ. S³owo to: " << m_word << endl;
+		cout << "Koniec gry! Przegrales. Slowo to: " << m_word << endl;
 		m_gameState = GameState::FINISH;
 		return true;
 	}
@@ -76,7 +76,7 @@ bool Game::OnUpdate(float deltaTime)
 
 void Game::OnRender()
 {
-	cout << "S³owo: ";
+	cout << "Slowo: ";
 	for (size_t i = 0; i < m_word.length(); ++i) {
 		if (m_guessedLetters[i]) {
 			cout << m_word[i];
@@ -85,7 +85,7 @@ void Game::OnRender()
 			cout << "_";
 		}
 	}
-	cout << "\nPozosta³e ¿ycia: " << m_lives << endl;
+	cout << "\nPozostale zycia: " << m_lives << endl;
 }
 
 void Game::OnShutdown()
