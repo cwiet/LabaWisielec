@@ -20,9 +20,12 @@ public:
 	void OnShutdown();
 
 private:
+	void LoadWordsFromFile(const std::string& filename);
 	std::string m_word;
-	std::vector<std::string> m_wordsPool = { "kolor", "silnik", "wzorzec", "silnie", "kanapka" };
+	std::vector<std::string> m_wordsPool;
 	std::vector<bool> m_guessedLetters;
 	GameState m_gameState = GameState::START;
+	int m_lives = 6;
+	char m_lastGuess = '\0';
 
 };
