@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wisielec", "Wisielec.vcxproj", "{F0530020-E8FA-4848-BCED-B41F2842ED46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Debug|x64.ActiveCfg = Debug|x64
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Debug|x64.Build.0 = Debug|x64
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Debug|x86.Build.0 = Debug|Win32
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Release|x64.ActiveCfg = Release|x64
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Release|x64.Build.0 = Release|x64
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Release|x86.ActiveCfg = Release|Win32
+		{F0530020-E8FA-4848-BCED-B41F2842ED46}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45226BB4-1B6D-4ED2-91F2-C0C7EF6EB074}
+	EndGlobalSection
+EndGlobal
